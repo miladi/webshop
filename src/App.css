@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  line-height: 35px;
+}
+
+.nav {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+          "menu menu menu menu menu menu menu menu2";
+}
+
+.menuBar {
+  grid-area: menu;
+  display: flex;
+  padding-top: 10px;
+}
+
+.menuBar2 {
+  grid-area: menu2;
+  display: flex;
+  font-size: x-large;
+}
+
+[class*="menuBar"] li {
+  padding-right: 20px;
+  font-weight: 500;
+  list-style: none;
+}
+
+[class*="menuBar"] a {
+  text-decoration: none;
+  color: black;
+}
+
+[class*="menuBar"] a:hover {
+  color: orangered;
+}
+
+.searchBar {
+  margin: auto;
+  width: 30%;
+  padding: 10px;
+}
+
+.search {
+  border-radius: 50px;
+  text-align: center;
+  background-color: #f0f0f0;
+  width: 100%;
+}
+
+.category {
+  width: 100%;
+  padding: 10px;
+}
+
+.items {
+  color: white;
+  position: fixed;
+  left: 10px;
+
+}
+
+.containter {
+  background-color: #282c34;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas:
+          "cat movie movie movie movie movie movie .";
+}
+
+.movies {
+  grid-area: movie;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  list-style-type: none;
+  justify-content: center;
+  color: white;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 600px;
+  width: 320px;
+}
+
+.list p {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+img {
+  margin-bottom: 16px;
+}
+
+[class*="buy"]:hover {
+  color: orangered;
+}
+
+.show {
+  display: inline-block;
+}
+
+.hide {
+  display: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.basket ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.basket li {
+  margin: 10px;
+  border: 1px solid black;
+  text-align: center;
+}
+
+.basket button {
+  width: 120px;
+  font-size: large;
+}
+
+.total {
+  margin-left: 50px;
+}
